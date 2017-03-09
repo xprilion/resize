@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Resizer</title>
+		<script src="jquery.min.js"></script>
+		<script src="script.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div id="control">
+		<form name="abc" id="ff">
+			<input type="file" name="ifile" id="fn"></input><br><br>
+		</form>
+			<div id="sopts">
+				<li class="inact" id="op1" onclick="alert('Choose a file!');">Original</li>
+				<li class="inact" id="op2" onclick="autosize(250, 250, 2);">250 x 250 </li>
+				<li class="inact" id="op3" onclick="autosize(500, 500, 3);">500 x 500 </li>
+				<li class="inact" id="op4" onclick="autosize(640, 480, 4);">480 x 640 </li>
+				<li class="inact" id="op5" onclick="autosize(1024, 768, 5);">1024 x 768 </li>
+				<li class="inact" id="op6" onclick="autosize(2048, 1346, 6);">2048 x 1346 </li>
+				<li class="inact" id="op0" onclick="autosize(0,0,0);">Custom</li>
+			</div>
+			<div id="hw">
+				<input type="text" name="w" id="wn" placeholder="width" />
+				<input type="text" name="h" id="hn" placeholder="height"/>
+			</div><br>
+			<div id="qslide">Quality: <input type="text" name="q" id="qn" placeholder="00" onkeyup="setq();"></input></div>
+			<input type="text" id="sn" placeholder="Max File Size"></input>
+			<select id="un">
+				<option value="1">KB</option>
+				<option value="2">MB</option>
+			</select>&nbsp;&nbsp;
+			<select id="mn">
+				<option value="auto">Auto</option>
+				<option value="exact">Exact</option>
+				<option value="portrait">Portrait</option>
+				<option value="landscape">Landscape</option>
+			</select>
+			<div id="sub">Submit</div>
+		</div>
+		<div id="res">
+			<div id="instruct">
+				1. Choose a photo. Wait for it to upload.<br>
+				2. When a thumbnail of your photo replaces the select file option, choose required dimension of optimized photo.<br>
+				3. Click along the green bar to select optimized image quality in percentage of original.<br>
+				4. Click submit. Wait for your optimized image to be generated.<br>
+				5. Optimized image will appear on the screen. Right click and 'Save as' to download.
+			</div>
+			<div id="ad"></div>	
+		</div>
+	</body>
+</html>

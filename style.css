@@ -1,0 +1,119 @@
+body{
+	margin: 0px;
+	font-family: Calibri;
+}
+
+#control{
+    background: #E2E2E2;
+    border-bottom: 2px solid #cdcdcd;
+    padding: 1%;
+	cursor: default;
+}
+
+#mn{
+    border: 1px solid #cdcdcd;
+    outline: none;
+    padding: 0.4%;
+    border-radius: 5px;
+}
+
+#mn option{
+	background:#D7ECFF;
+}
+
+.opt, .inact, #sub{
+	display: inline-block;
+    padding: 0.5%;
+    border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0px 0px 3px 0px #C1C0C0;
+}
+
+.sel{
+    background: #FFFFFF;
+    color: #000;
+    cursor: default;
+    border: 1px solid #F10000;
+	transition: background 0.5s;
+}
+
+.norm{
+    background: #91FF90;
+    color: #2F2F2F;
+    border: 1px solid #FFFFFF;
+	transition: background 0.5s;
+}
+
+.norm:hover{
+    background: #FFFFFF;
+    color: #000000;
+    border: 1px solid #0f0;
+	transition: background 0.5s;
+}
+
+.inact{
+	background: #D2D2D2;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+	transition: background 0.5s;
+}
+
+#hw, #fh, #xa, #xb, #xc{
+	display: none;
+}
+
+#qn{
+    border: 0px;
+    background: transparent;
+    outline: none;
+    width: 5%;
+	text-align: center;
+}
+
+#qslide{
+	margin-bottom: 1%;
+}
+
+.slit{
+    padding: 0.5% 0.25% 0% 0.25%;
+    font-size: 4px;
+    box-shadow: 0px 0px 2px 0px #969696;
+	transition: background 0.5s;
+}
+
+#sub{
+    padding: 0.5% 2%;
+    background: #92FF92;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 3px 0px #C1C0C0;
+	transition: background 0.5s;
+}
+
+#sub:hover{
+	background:  #00FF2D;
+}
+
+#sub img{
+	height: 15px;
+	width: 25px;
+}
+
+#ff{
+	float:right;
+}
+
+#instruct{
+    padding: 1%;
+    background: rgba(255, 255, 0, 0.24);
+    display: inline-block;
+    width: 65%;
+    border: 3px solid rgba(255, 255, 0, 0.29);
+    margin: 5%;
+}
+
+#ad{
+	display: inline-block;
+	width: 32%;
+	float: right;
+}
